@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - SGAC</title>
+    <link rel="icon" href="Image/imgLogin/incon_small.png">
+    <link rel="stylesheet" href="CSS\login.css">
+</head>
+
+<body>
+
+    <!-- Inicio navbar-->
+    <nav>
+      
+      <a href="index.html"> <img class="logo" src="Image/imgLogin/SGAC2.png" alt="Imagem logo do Sgac"></a>
+
+        <ul class="navbar">
+            <li class="nav-item">
+                <a  id="navegation" class="nav-link" href="index.html">Home</a>
+            </li>
+            <!-- <li class="nav-item">
+                <a class="nav-link active" href="/login.html">Login</a>
+            </li> -->
+            <li class="nav-item">
+                <a  id="navegation" href="https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm"  target="_blank" class="nav-link">LGPD</a>
+            </li>
+            <li class="nav-item">
+                <a id="navegation" href="#" class="nav-link disabled">FAQ</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Fim navbar-->
+
+
+    <div class="main-login">
+
+        <div class="right-login">
+            <div class="card-login">
+
+                <div class="image">
+                    <div id="elemento-pai">
+                        <img id="imagem1" src="Image/imgLogin/gifon-unscreen.gif">
+                        <img id="imagem2" width="170" height="170" src="./Image/imgLogin/logotipo.png">
+                    </div>
+                </div>
+
+
+                <form action="/" method="post" class='formulario textfield'>
+                    <div class="textfield">
+                        <label for="usuario">CPF</label>
+                        <input type="text" name="usuario" placeholder="Usuário" class="cpf validar">
+                    </div>
+
+                    <div class="textfield">
+                        <label for="senha">Senha</label>
+                        <input type="password" name="senha" placeholder="Senha" class="senha validar">
+                    </div>
+                    <button type="submit" class="btn-login">Login</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p class="copyrigth"> &copy; Todos os Direitos Reservados - SGAC 2022 </p>
+    </footer>
+
+
+
+    <video muted autoplay loop src="Video\video-de-fundo.mp4" type="video/mp4"></video>
+    <div class="capa"></div>
+
+    <script src="js/loginMain.js"></script>
+    <script src="js/loginValidarCPF.js"></script>
+</body>
+
+</html>
